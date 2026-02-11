@@ -1,0 +1,19 @@
+[package]
+name = "jrport26"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "reelone"
+path = "src/bin/reelone.rs"
+
+[dependencies]
+usvg = "0.47.0"
+winit = "0.30.12"
+commons = { path = "../commons" }
+lazy_static = "1.5.0"
+wgpu = "28.0.0"
+rayon = "1.8"
+pixels = { path = "../pixelswgpu30" }
+bytemuck = { version = "1.25.0", features = ["derive"] }
+display-info = "0.5.7"

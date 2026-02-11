@@ -1,0 +1,18 @@
+[workspace]
+resolver = "3"
+members = [
+    "commons",
+    "jrport26", 
+    #"examples/*",
+    #"internals/*",
+    #"run-wasm",
+    "pixelswgpu30",
+]
+
+# Dependencies that are shared by the workspace.
+[workspace.dependencies.pixels]
+env_logger = "0.11.8"
+error-iter = "0.4"
+log = "0.4"
+winit = "0.30"
+winit_input_helper = "0.17"
